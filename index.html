@@ -643,11 +643,11 @@
             font-weight: bold;
         }
 
-        /* Add Button */
+        /* Add Button - এখানেই পরিবর্তন করা হয়েছে */
         .add-btn {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -658,7 +658,7 @@
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(233,30,99,0.4);
             transition: 0.3s;
-            z-index: 100;
+            z-index: 999;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -752,7 +752,7 @@
     <!-- Transaction List -->
     <div class="list-section" id="list"></div>
 
-    <!-- Add Button -->
+    <!-- Add Button - এই বাটনটি সবসময় নিচে থাকবে -->
     <button class="add-btn" onclick="openEntryPanel()">+</button>
 </div>
 
